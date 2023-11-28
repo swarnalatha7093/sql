@@ -1,3 +1,4 @@
-CREATE TABLE `zomato`.`users1` (
-  `id` INT NULL,
-  UNIQUE INDEX `idusers1_UNIQUE` (`id` ASC));
+create table zomato.`user1`(
+ id int null,
+ unique index `id_unique`(`id` asc)
+ );
