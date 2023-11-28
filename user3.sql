@@ -1,5 +1,5 @@
-CREATE TABLE `zomato`.`users3` (
-  `id` INT NOT NULL,
-  `username` VARCHAR(45) NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE INDEX `id_UNIQUE` (`id` ASC));
+create table zomato.`user3`(
+id int not null,
+name varchar(45) not null,
+primary key(`id`)
+);
