@@ -1,5 +1,22 @@
 use zomato;
 
+select * from zomato.person as prs
+inner join zomato.personaddress as prsadd on prs.id = prsadd.personid;
+
+select * from zomato.person as prs
+left join zomato.personaddress as prsadd on prs.id = prsadd.personid;
+
+select * from zomato.person as prs
+right join zomato.personaddress as prsadd on prs.id = prsadd.personid;
+
+
+
+insert into zomato.person(id, name, email, phone)
+values (1,'swarna','s@gmail.com', 1234567890);
+
+insert into zomato.person(id, name, email, phone)
+values (2,'sony','n@gmail.com', 1234567890);
+
 drop table zomato.person;
 
 alter table zomato.personaddress
